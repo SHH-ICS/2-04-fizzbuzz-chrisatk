@@ -8,6 +8,9 @@
 
 result = ""
 for myNumber in range(32):
-  result = str(result) + str(myNumber) + "\n"
+  if (myNumber+1) % 3 == 0:
+    result = str(result) + "Fizz" + "\n"
+  else:
+    result = str(result) + str(myNumber+1) + "\n"
 
 print(result)
