@@ -8,8 +8,12 @@
 
 result = ""
 for myNumber in range(32):
-  if (myNumber+1) % 3 == 0:
+  if (myNumber+1) % 15 == 0:
+    result = str(result) + "FizzBuzz" + "\n"
+  elif (myNumber+1) % 3 == 0:
     result = str(result) + "Fizz" + "\n"
+  elif (myNumber+1) % 5 == 0:
+    result = str(result) + "Buzz" + "\n"
   else:
     result = str(result) + str(myNumber+1) + "\n"
 
